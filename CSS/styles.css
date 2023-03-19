@@ -110,7 +110,7 @@ h1,h2,h4,h5,h6,p {
     
 }
 
-.princeton-pic,  .carts-logo {
+.princeton-pic,  .carts-logo, .profile-pic {
     float: left;
     width: 15%;
     margin-right: 30px;
@@ -120,6 +120,15 @@ h1,h2,h4,h5,h6,p {
     width: 15%;
     margin-left: 30px;
     top: 10px;
+}
+
+.floyd-row {
+    position: absolute;
+    width: 70%;
+    top: 60%;
+    left: 10%;
+    text-align: left;
+    line-height: 2;
 }
 .skill-row {
     line-height: 200%;
