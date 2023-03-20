@@ -144,3 +144,7 @@ h1,h2,h4,h5,h6,p {
     top: 0;
     left: 0;
 }
+
+.contact-me {
+    display: flex;
+}

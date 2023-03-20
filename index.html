@@ -2,10 +2,12 @@
 <html>
 <head>
     <meta charset="utf-8">
+    
     <title>Floyd's Personal Webpage</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
     <link rel="icon" href="favicon.ico?v=2">
+    
 </head>
 
 <body>
@@ -13,7 +15,7 @@
             
             
             <div class="background">
-                <img src="images/bh_background.jpeg" alt="Princeton Background" style="width: 100%;height: 100%;">
+                <img class="bck"src="images/bh_background.jpeg" alt="Princeton Background" style="width: 100%;height: 100%;">
                 <div class="floyd-row slide">
             
                     <img class="princeton-pic" src="images/floydb.jpg" alt="Floyd Benedikter Headshot" style="width:200px;height:200px;border-radius: 50%;">
@@ -29,7 +31,7 @@
         <div class="profile reveal">
           <img src="" alt="">
           <h2>Hello.</h2>
-          <p>This is my personal webpage, made by scratch. Learn all about me and contact me below!</p>
+          <p>This is my personal webpage, made from scratch. Learn all about me and contact me below!</p>
         </div>
         <hr>
         <div class="skills">
@@ -39,14 +41,14 @@
             <img class="princeton-pic" src="images/princeton.jpeg" alt="Floyd Benedikter Headshot" style="width:200px;height:200px;border-radius: 50%;">
             <h3>Education</h3>
             <p>I am currently in my senior year at Princeton University. I am pursuing a bachelor of science and engineering (BSE) in computer science.
-                a brief synopsis of my coursework can be found here.
+                A brief synopsis of my coursework can be found here.
             </p>
           </div>
 
           <div class="skill-row slide">
             <img class="rowing-pic" src="images/IMG_1098.JPG" alt="Floyd Benedikter Headshot" style="width:200px;height:200px;border-radius: 50%;"> 
             <h3>Outside of school</h3>
-            <p>Outside of the classroom, I am a world-class rower, hobby guitarist, climber and cyclist. To find out more about me click here.</p>
+            <p>Outside of the classroom, I am a world-class rower, hobby guitarist, climber, and cyclist. To find out more about me click here.</p>
           </div>
 
           <div class="skill-row slide">
@@ -56,13 +58,11 @@
           </div>
         </div>
         
-        <div class="contact-me">
-          <h2>Get In Touch</h2>
-          <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-          <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-          <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
-        </div>
+        
       </div>
+      <div class="contact-me">
+        <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
+    </div>
       
       
       <div class="bottom-container">
@@ -70,43 +70,7 @@
         <a class="footer-link" href="https://github.com/Floydbene">GitHub</a>
         <p>© Made with &#10084 by Floyd.</p>
       </div>
-     
-      <script>
-        function reveal() {
-            var reveals = document.querySelectorAll(".reveal");
-
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
-
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active");
-                } else {
-                    reveals[i].classList.remove("active");
-                }
-            }
-            
-        }
-        function slide() {
-            var reveals = document.querySelectorAll(".slide");
-
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
-
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active");
-                } else {
-                    reveals[i].classList.remove("active");
-                }
-            }
-            
-        }
-
-window.addEventListener("scroll", reveal);
-window.addEventListener("scroll", slide);
-      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <script src="index.js" charset="utf-8">       </script>
 </body>
 </html>
