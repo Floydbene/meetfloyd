@@ -20,6 +20,7 @@ table {
     padding: 20px 0 10px;
     border-width: 10px;
     border-style: solid;
+    bottom: 10px;
 }
 hr {
     border: dotted;
@@ -47,8 +48,8 @@ img {
     
     position: relative;
 }
-.btn {
-    margin: 30px;
+.cbtn {
+    margin: 40px auto;
     display: inline-block;
     outline: 0;
     cursor: pointer;
@@ -131,6 +132,7 @@ h1,h2,h4,h5,h6,p {
     line-height: 2;
 }
 .skill-row {
+    min-height: 105px;
     line-height: 200%;
     width: 70%;
     margin: 100px auto 100px auto;
@@ -147,4 +149,10 @@ h1,h2,h4,h5,h6,p {
 
 .contact-me {
     display: flex;
+}
+
+.form-group {
+    color: white;
+    max-width: 80%;
+    margin: 50px auto;
 }
