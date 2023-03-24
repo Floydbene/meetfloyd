@@ -1,12 +1,13 @@
 body {
     margin:0;
     background-color: rgb(0, 0, 0);
+    color: white;
     text-align: center;
     font-family: 'Montserrat';
 }
 h2, h3 {
     padding-bottom: 10px;
-    color: rgb(127, 255, 180);
+    color: #ffff5a;
 }
 ul {
     text-align: left;
@@ -16,11 +17,16 @@ table {
 }
 .bottom-container {
     background-color: rgb(32, 32, 32);
+    color: rgb(60, 60, 60);
     margin-top: 10px;
     padding: 20px 0 10px;
     border-width: 10px;
     border-style: solid;
     bottom: 10px;
+}
+
+.middle-container{
+    padding: 5%;
 }
 hr {
     border: dotted;
@@ -31,17 +37,22 @@ hr {
 }
 
 a {
-    margin-left: 20px;
-    margin-right: 20px;
     text-decoration: none;
-    color:white;
+    color: rgb(255, 255, 255)
 }
 
+.footer-link {
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+
 a:hover {
-    color: aquamarine;
+    color: rgb(255, 181, 108);
 }
 a:visited {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 img {
@@ -61,7 +72,7 @@ img {
     border: 1px solid;
     border-radius: 6px;
     color: #ffffff;
-    background-color: #2ea44f;
+    background-color: #495057;
     border-color: #1b1f2326;
     box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
     transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
@@ -81,7 +92,7 @@ img {
     opacity: 0;
     transition: 1s all ease;
 }
-.slide{
+.slider{
     position: relative;
     transform: translateX(150px);
     opacity: 0;
@@ -92,7 +103,7 @@ img {
     transform: translateY(0);
     opacity: 1;
 }
-.slide.active{
+.slider.active{
     transform: translateX(0);
     opacity: 1;
 }
@@ -111,12 +122,24 @@ h1,h2,h4,h5,h6,p {
     
 }
 
-.princeton-pic,  .carts-logo, .profile-pic {
+.princeton-pic,  .carts-logo {
+    float: left;
+    cursor: pointer;
+    width: 15%;
+    margin-right: 30px;
+}
+
+.profile-pic {
     float: left;
     width: 15%;
     margin-right: 30px;
 }
+
+.gitlogo, .lilogo,.gmaillogo{
+    cursor: pointer;
+}
 .rowing-pic {
+    cursor: pointer;
     float: right;
     width: 15%;
     margin-left: 30px;
@@ -124,6 +147,7 @@ h1,h2,h4,h5,h6,p {
 }
 
 .floyd-row {
+    
     position: absolute;
     width: 70%;
     top: 60%;
@@ -156,3 +180,65 @@ h1,h2,h4,h5,h6,p {
     max-width: 80%;
     margin: 50px auto;
 }
+
+.accordion-item {
+    background-color: rgb(17, 17, 17);
+}
+
+
+.accordion {
+    max-width: 75%;
+    margin: auto;
+}
+
+.accordion-button {
+    background-color: #282828;
+    color:white;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #393939;
+}
+.carousel-inner > .item >img{
+    min-height : 300px;
+    max-height : 300px;
+    width : 100%;
+}
+
+.container{
+    height:300px;
+}
+
+
+.carousel-item{
+    min-height: 280px;
+}
+
+.carousel {overflow:hidden}
+
+.bg-wrap {
+    padding: 5%;
+    overflow:visible;
+    position: relative;
+  }
+  
+.bg {
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+.bg-content {
+    position: relative;
+  }
+
+  .pictable{
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 14em 1em;
+    text-align: center;
+  }

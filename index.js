@@ -14,8 +14,8 @@ function reveal() {
     }
     
 }
-function slide() {
-    var reveals = document.querySelectorAll(".slide");
+function slider() {
+    var reveals = document.querySelectorAll(".slider");
 
     for (var i = 0; i < reveals.length; i++) {
         var windowHeight = window.innerHeight;
@@ -32,7 +32,7 @@ function slide() {
 }
 
 window.addEventListener("scroll", reveal);
-window.addEventListener("scroll", slide);
+window.addEventListener("scroll", slider);
 
 $("img").not(".bck").on("mouseover", function (){
     $(this).animate({
@@ -46,20 +46,28 @@ $("img").not(".bck").on("mouseout", function (){
         width: "-=10px"
     });
 });
-$("h3").on("click", function (){
-    $('h3').css("color","red");
-});
 $(".princeton-pic").on("click", function()
 {
-    window.open('index.html', '_blank');
+    window.open('experiences.html', "_self");
 });
 $(".rowing-pic").on("click", function()
 {
-    window.open('https://www.codexworld.com', '_blank');
+    window.open('athletics.html', "_self")
 });
 $(".carts-logo").on("click", function()
 {
-    window.open('https://www.codexworld.com', '_blank');
+    window.open('https://www.cartsmobility.com/', "_self");
 });
-
+$(".gitlogo").on("click", function()
+{
+    window.open('https://github.com/Floydbene', "_self");
+});
+$(".lilogo").on("click", function()
+{
+    window.open('https://www.linkedin.com/in/floydbenedikter/', "_self")
+});
+$(".gmaillogo").on("click", function()
+{
+    window.location.href = "mailto:floydb@princeton.edu";
+});
 
