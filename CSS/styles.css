@@ -239,6 +239,6 @@ h1,h2,h4,h5,h6,p {
   .pictable{
     margin: auto;
     border-collapse: separate;
-    border-spacing: 14em 1em;
+    border-spacing: 5vw 1em;
     text-align: center;
   }
